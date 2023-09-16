@@ -7,7 +7,6 @@ print(letter.format(name, country))
 ```
 #### Output:
 ```
-PS F:\py\python> python f-string.py 
 Hey my name is Rajiv and I am from India
 ```
 ### The declared variable "name" and "country", printed in the placce of curly bracket in the print statment.
@@ -23,7 +22,6 @@ print(letter.format(country, name))
 ```
 #### Output:
 ```
-PS F:\py\python> python f-string.py
 Hey my name is India and I am from Rajiv
 ```
 # Case-3
@@ -36,7 +34,6 @@ print(letter.format(country, name))
 ```
 #### Output:
 ```
-PS F:\py\python> python f-string.py
 Hey my name is India and I am from Rajiv
 ```
 # Case-4
@@ -50,7 +47,6 @@ print(f"Hey my name is {name} and I am from {country}")
 ```
 #### Output:
 ```
-PS F:\py\python> python f-string.py
 Hey my name is Rajiv and I am from India
 ```
 # Case-5
@@ -61,7 +57,6 @@ print(txt.format(price = 49.09999))
 ```
 #### Output:
 ```
-PS F:\py\python> python f-string.py
 For only 49.10 dollars!
 ```
 # Case-6
@@ -73,7 +68,6 @@ print(txt)
 ```
 #### Output:
 ```
-PS F:\py\python> python f-string.py
 For only 49.10 dollars!
 ```
 # Case-7
@@ -87,13 +81,14 @@ print(f"{2*30}")
 ```
 
 # Case-8
-# If we want to renain or display f-string in output, then use double {}.
-
+### If we want to renain or display f-string in output, then use double {}.
+```
 letter = "Hey my name is {1} and I am from {0}"
 country = "India"
 name = "Rajiv"
 print(f"Hey my name is {{name}} and I am from {{country}}")
-
-# Output:
-# PS F:\py\python> python 19-f-string.py
-# Hey my name is {name} and I am from {country}
+```
+### Output:
+```
+Hey my name is {name} and I am from {country}
+```
