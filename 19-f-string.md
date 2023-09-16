@@ -86,7 +86,7 @@ print(f"{2*30}")
 60
 ```
 
-####### Case-8
+# Case-8
 # If we want to renain or display f-string in output, then use double {}.
 
 letter = "Hey my name is {1} and I am from {0}"
