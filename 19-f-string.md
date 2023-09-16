@@ -5,83 +5,83 @@ country = "India"
 name = "Rajiv"
 print(letter.format(name, country))
 ```
-### Output:
+#### Output:
 ```
 PS F:\py\python> python f-string.py 
 Hey my name is Rajiv and I am from India
 ```
-## Explanation:
-## Here, the name and country placed in the {} in the print statment.
+### The declared variable "name" and "country", printed in the placce of curly bracket in the print statment.
 
 # Case-2
-## if we change the place of country and name, that will change in the print statement too. 
+### if we change the place of variable in print sttement during passing , the location of the variable will change in the output too. 
+### And we will not get the desired output.
 ```
 letter = "Hey my name is {} and I am from {}"
 country = "India"
 name = "Rajiv"
 print(letter.format(country, name))
 ```
-### Output:
+#### Output:
 ```
 PS F:\py\python> python f-string.py
 Hey my name is India and I am from Rajiv
 ```
 # Case-3
-## We can assign the index number to overcome from above issue.
+### We can assign the index number to overcome from above issue.
 ```
 letter = "Hey my name is {1} and I am from {0}"
 country = "India"
 name = "Rajiv"
 print(letter.format(country, name))
 ```
-### Output:
+#### Output:
 ```
 PS F:\py\python> python f-string.py
 Hey my name is India and I am from Rajiv
 ```
 # Case-4
-## The above process is not a good approach, when we have a lot of variable. 
-## We can add the variavle name direct in print, by declaring as f-string.
+### The above process is not a good approach, when we have a lot of variable. 
+### We can add the variavle name direct in print, by declaring as f-string.
 ```
 letter = "Hey my name is {1} and I am from {0}"
 country = "India"
 name = "Rajiv"
 print(f"Hey my name is {name} and I am from {country}")
 ```
-## Output:
+#### Output:
 ```
 PS F:\py\python> python f-string.py
 Hey my name is Rajiv and I am from India
 ```
 # Case-5
-## It will print upto 2 decimal.....
+### It will print upto 2 decimal.....
 ```
 txt = "For only {price:.2f} dollars!"
 print(txt.format(price = 49.09999))
 ```
-## Output:
+#### Output:
 ```
 PS F:\py\python> python f-string.py
 For only 49.10 dollars!
 ```
 # Case-6
-## Convert into f-string
+### Convert into f-string
 ```
 price = 49.09999
 txt = f"For only {price:.2f} dollars!"
 print(txt)
 ```
-## Output:
+#### Output:
 ```
 PS F:\py\python> python f-string.py
 For only 49.10 dollars!
 ```
 # Case-7
-## making a f-string
+### making a f-string
 ```
 print(f"{2*30}")
 ```
-## Output:
+#### Output:
 ```
 60
 ```
