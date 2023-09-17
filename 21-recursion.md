@@ -1,5 +1,6 @@
 # Recursion
 ##### When we call a function within other function, that called as recursion.
+##### In the below code, the factorial function name called in return with the factorial function only.
 ```
 def factorial(n):
      if(n==0 or n ==1):
