@@ -1,20 +1,30 @@
+# Recursion
+# When we call a function within other function, that called as recursion.
 
-# If a string written after def and before print, then only that is consider as docstring.
-# Chaging the docstring chages the program output. 
-# if we didn't define the string before print in a function, thtt considers as comment.
-# def square(n):
-#     '''Takes in a number n, returns the square of n'''
-#     print(n**2)
-# square(5)
-# print(square.__doc__)
+# def factorial(n):
+#     if(n==0 or n ==1):
+#         return 1
+#     else:
+#         return n * factorial(n-1)
+# print(factorial(3))
+# print(factorial(4))
+# print(factorial(5))
 
-# Output:
-# 25
-# Takes in a number n, returns the square of n
+# Output
+# 6
+# 24
+# 120
 
-
-def square(n):
-    print(n**2)
-    '''Takes in a number n, returns the square of n'''
-square(5)
-print(square.__doc__)
+# Fibonacci sequence
+def fib(n):
+    if n <= 1:
+        return n
+    else:
+        return(fib(n-1) + fib(n-2))
+nterms = 10
+if nterms <= 0:
+    print("Please enter a postive integer")
+else:
+    print("Fibonacci sequence:")
+    for i in range(nterms):
+        print(fib(i))
