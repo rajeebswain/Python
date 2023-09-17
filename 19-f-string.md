@@ -13,7 +13,7 @@ Hey my name is Rajiv and I am from India
 ##### The declared variable "name" and "country", printed in the placce of curly bracket in the print statment.
 
 ### Case-2
-##### if we change the place of variable in print sttement during passing , the location of the variable will change in the output too. 
+##### if we change the place of variable in print staement during passing , the location of the variable will change in the output too. 
 ##### And we will not get the desired output.
 ```
 letter = "Hey my name is {} and I am from {}"
